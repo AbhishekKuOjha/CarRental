@@ -283,6 +283,23 @@ import java.util.Scanner;
      }
 
  }
+
+public class Main {
+
+    public static void main(String[] args) {
+        CarRentalSystem rentalSystem = new CarRentalSystem();
+
+        Car car1 = new Car( "C001", "Rolls-Royce", "Phantom", 60.0);
+        Car car2 = new Car("C002", "Hindustan", "Contessa", 70.0);
+        Car car3 = new Car("C003", "Tata", "Nano", 150.0);
+
+        rentalSystem.addCar(car1);
+        rentalSystem.addCar(car2);
+        rentalSystem.addCar(car3);
+
+        rentalSystem.menu();
+    }
+}
 /*
 public class Main{
 
